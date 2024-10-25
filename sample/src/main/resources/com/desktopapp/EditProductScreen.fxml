@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<TitledPane alignment="TOP_CENTER" animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="500.0" text="Editar" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.desktopapp.EditProductController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Pane layoutX="52.0" layoutY="20.0" prefHeight="304.0" prefWidth="395.0" style="-fx-background-color: #8c8c8c;">
+               <children>
+                  <TextField fx:id="nameProductEdit" layoutX="213.0" layoutY="69.0" />
+                  <Label layoutX="70.0" layoutY="67.0" text="Name" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="priceProductEdit" layoutX="213.0" layoutY="140.0" />
+                  <Label layoutX="70.0" layoutY="137.0" text="Price" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="70.0" layoutY="194.0" text="Quantity" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="quantityProductEdit" layoutX="213.0" layoutY="209.0" />
+                  <Button fx:id="commitChangesBtn" layoutX="145.0" layoutY="245.0" mnemonicParsing="false" onAction="#commitChanges" text="Commit changes" />
+               </children>
+            </Pane>
+         </children></AnchorPane>
+  </content>
+</TitledPane>
